@@ -88,7 +88,23 @@ The POST method requires the following object:
 }
 ```
 
-POST key:value
+### Query the api
+
+Use the key such that `/api/cars?color=red` to return on vehicles with color red, chain them together such as `/api/cars?color=red&autoTrans=false`
+
+| key         | value                  |
+| :---------- | :--------------------- |
+| `vin`       | vehicle id number      |
+| `make`      | manufacturer           |
+| `model`     | car model              |
+| `year `     | manugacture year       |
+| `color`     | car color              |
+| `mileage`   | car mileage            |
+| `wrecked`   | wrecked title          |
+| `autoTrans` | automatic transmission |
+| `doors`     | car door number        |
+
+### POST key:value
 
 | key         | value                  | type    | required | unique |
 | :---------- | :--------------------- | :------ | :------- | :----- |

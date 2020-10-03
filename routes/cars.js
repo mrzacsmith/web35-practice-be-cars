@@ -13,7 +13,7 @@ router.get('/test', (req, res) => {
 // @desc:   Get all cars
 // @route:  GET /
 router.get('/', (req, res) => {
-  Car.find()
+  Car.find(req.query)
     .then((cars) => res.json(cars))
     .catch((err) => res.status(400).json(`Error: ${err}`))
 })
