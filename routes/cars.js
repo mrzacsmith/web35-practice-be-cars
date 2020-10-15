@@ -18,6 +18,14 @@ router.get('/', (req, res) => {
     .catch((err) => res.status(400).json(`Error: ${err}`))
 })
 
+// @desc:    Get car by id
+// @route:   GET /:id
+router.get('/:id', (req, res) => {
+  Car.findById(req.params.id)
+    .then((car) => res.json(car))
+    .catch((err) => res.status(400).json(`Error: ${err}`))
+})
+
 // @desc:   Add new cars
 // @route:  POST /add
 router.post('/', (req, res) => {
