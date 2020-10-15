@@ -41,7 +41,8 @@ Root URL: [https://cars-be-practice.herokuapp.com/](https://cars-be-practice.her
 | HTTP method | end point       |
 | ----------: | :-------------- |
 |         GET | `/api/cars/`    |
-|        POST | `/api/cars/` |
+|         GET | `/api/cars/:id` |
+|        POST | `/api/cars/`    |
 
 ### GET
 
@@ -97,7 +98,7 @@ Use the key such that `/api/cars?color=red` to return on vehicles with color red
 | `vin`       | vehicle id number      |
 | `make`      | manufacturer           |
 | `model`     | car model              |
-| `year `     | manugacture year       |
+| `year`      | manugacture year       |
 | `color`     | car color              |
 | `mileage`   | car mileage            |
 | `wrecked`   | wrecked title          |
@@ -111,7 +112,7 @@ Use the key such that `/api/cars?color=red` to return on vehicles with color red
 | `vin`       | vehicle id number      | string  | true     | true   |
 | `make`      | manufacturer           | string  | true     | false  |
 | `model`     | car model              | string  | true     | false  |
-| `year `     | manugacture year       | number  | true     | false  |
+| `year`      | manugacture year       | number  | true     | false  |
 | `color`     | car color              | string  | false    | false  |
 | `mileage`   | car mileage            | number  | false    | false  |
 | `wrecked`   | wrecked title          | boolean | false    | false  |
