@@ -41,7 +41,7 @@ Root URL: [https://cars-be-practice.herokuapp.com/](https://cars-be-practice.her
 | HTTP method | end point       |
 | ----------: | :-------------- |
 |         GET | `/api/cars/`    |
-|        POST | `/api/cars/add` |
+|        POST | `/api/cars/` |
 
 ### GET
 
