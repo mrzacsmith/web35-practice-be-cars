@@ -28,7 +28,7 @@ router.get('/:id', (req, res) => {
 
 // @desc:   Add new cars
 // @route:  POST /add
-router.post('/add', (req, res) => {
+router.post('/', (req, res) => {
   const newCar = new Car({
     vin: req.body.vin,
     make: req.body.make,
