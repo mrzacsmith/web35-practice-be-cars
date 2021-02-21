@@ -3,12 +3,20 @@ const morgan = require('morgan')
 const helmet = require('helmet')
 const colors = require('colors')
 const cors = require('cors')
+const RateLimit = require('express-rate-limit')
 
 const connectDB = require('./utils/db.js')
 const CarRouter = require('./routes/cars.js')
 require('dotenv').config()
 
 const server = express()
+
+// rate limit
+const limiter = new RateLimit({
+    windowMs: 15*60*1000, // 15 mins
+    max: 100,
+    delayMs: 0
+})
 
 server.use(cors())
 server.use(helmet())
